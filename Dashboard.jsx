@@ -4,7 +4,8 @@ import Chart from 'chart.js/auto';
 
 const Dashboard = ({ darkMode }) => {
   const [transacoes, setTransacoes] = useState(() => {
-    const dados = localStorage.getItem(' 'transacoes');
+    const dados = localStorage.getItem('transacoes');
+;
     return dados ? JSON.parse(dados) : [];
   });
 
